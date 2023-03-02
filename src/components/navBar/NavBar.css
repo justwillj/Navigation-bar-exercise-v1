@@ -1,0 +1,32 @@
+
+/* Link that helped me with the nav styling 
+ https://dev.to/supanthapaul/create-a-simple-navbar-with-7-lines-of-css-4h7f */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem; 
+    background: linear-gradient(45deg, #3d55f1, #d2379b);
+  }
+
+nav ul {
+    display: flex;
+    list-style: none; 
+}
+
+nav li {
+    font-size: 4rem;
+    color: white;
+    padding-left: 5rem;
+  }
+
+  .header{
+    font-size: x-large;
+    text-align: center;
+    display: flex;
+  }
+
+  img{
+    
+    width: 20%;
+  }
+
