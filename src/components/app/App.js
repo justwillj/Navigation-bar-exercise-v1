@@ -1,15 +1,29 @@
 import NavBar from "../navBar/NavBar";
 import "./App.css";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Food from "../food/Food";
+import { useState } from "react";
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(false);
+
+  const test = () => {
+    setLoggedIn(true);
+  };
+
+  const signOut = () => {
+    setLoggedIn(false);
+  };
+
   return (
-    <div>
-      <BrowserRouter>
-        <NavBar />
-        <h1>Test</h1>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <div>
+        <NavBar onClick={test} test={loggedIn} logout={signOut} />
+        <Routes>
+          <Route onClick={test} path="/food" element={<Food />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
