@@ -12,7 +12,7 @@ const NavBar = ({ test, onClick, logout }) => {
           {!test ? <li onClick={onClick}>Login</li> : null}
         </Link>
         <Link to="/food">{test ? <li>Food</li> : null}</Link>
-        <Link to="/stuffs">{test ? <li>Stuff</li> : null}</Link>
+        <Link to="/stuff">{test ? <li>Stuff</li> : null}</Link>
         <Link to="/">{test ? <li onClick={logout}>Logout</li> : null}</Link>
       </ul>
     </nav>
