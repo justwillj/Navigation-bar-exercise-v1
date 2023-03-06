@@ -12,7 +12,7 @@ const NavBar = ({
     <nav>
       <div className="header">
         <img src="/logo192.png" alt="logo"></img>
-        <h2>The Best Company</h2>
+        <h2>Dev Store</h2>
       </div>
       <ul>
         <Link to="/food">

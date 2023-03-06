@@ -9,22 +9,34 @@ import PageNotFound from "../pageNotFound/PageNotFound";
 import Home from "../home/Home";
 
 const App = () => {
+  //Keeps track if the user is logged in or not
   const [loggedIn, setLoggedIn] = useState(false);
 
+  //Keeps track if the user is on the food page or not
   const [foodPageStatus, setFoodPageStatus] = useState(false);
 
+  //Keeps track if the user is on the stuff page or not
   const [stuffPageStatus, setStuffPageStatus] = useState(false);
 
+  /**
+   * This will log the user in and show the other elements of the navbar
+   */
   const loginIn = () => {
     setLoggedIn(true);
     setFoodPageStatus(true);
     setStuffPageStatus(false);
   };
 
+  /**
+   * This will take the user back to the main page and hide the other element of the navbar
+   */
   const signOut = () => {
     setLoggedIn(false);
   };
 
+  /**
+   * This will apply styling to the navbar to let the user know they are on the  Stuff page
+   */
   const stuffPageActive = () => {
     setStuffPageStatus(true);
     setFoodPageStatus(false);
