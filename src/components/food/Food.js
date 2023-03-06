@@ -1,3 +1,4 @@
+import "./Food.css";
 const Food = () => {
   return (
     <div>
