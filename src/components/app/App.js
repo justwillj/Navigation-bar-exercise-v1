@@ -35,7 +35,7 @@ const App = () => {
   };
 
   /**
-   * This will apply styling to the navbar to let the user know they are on the  Stuff page
+   * This will apply styling to the navbar to let the user know they are on the Stuff page
    */
   const stuffPageActive = () => {
     setStuffPageStatus(true);
